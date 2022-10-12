@@ -1,16 +1,6 @@
 import requests
 import json
 import random
-def jprint(obj):
-    # create a formatted string of the Python JSON object
-    text = json.dumps(obj, sort_keys=True, indent=2)
-    print(text)
-
-def equal_anime_check(x1_list):
-    for index in range(0, 4):
-        for anime in x1_list:
-            if x1_list[i] == anime:
-                pass
 
 
 
