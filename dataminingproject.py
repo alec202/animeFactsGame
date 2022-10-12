@@ -1,6 +1,6 @@
 import requests
-import json
 import random
+
 
 
 
@@ -33,7 +33,7 @@ if __name__=='__main__':
             random_picked_anime = copied_anime_list[anime_picked]  # random_picked_anime is assigned with the anime --
             # that got picked at the index value of the random number from the copied_anime_list
 
-            anime_fact_print_order_dict[(i+ 1)] = random_picked_anime  #add a new dictionary key and value with the key --
+            anime_fact_print_order_dict[(i+ 1)] = random_picked_anime  # add a new dictionary key and value with the key --
             # being the line number that the fact was printed on and the value of that line number key
             # being the name of the anime that the fact on that line is about
 
@@ -56,7 +56,7 @@ if __name__=='__main__':
 
             # set response equal to the facts about the randomly picked anime
             quote = response.json()['data'][random_quote_num]['fact']  # set the quote equal to the data
-            print('\n', quote)
+            print(f'\n{i + 1}.  {quote}')
 
             del copied_anime_list[anime_picked]
 
@@ -86,7 +86,7 @@ if __name__=='__main__':
 
 
 
-        if anime_fact_print_order_dict[line_guess] == correct_anime:
+        if anime_fact_print_order_dict[line_guess] == correct_anime_:
             score = score + 1
             print(f'Correct! your score now is {score} :)\n')
         else:
