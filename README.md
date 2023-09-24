@@ -1,2 +1,2 @@
 # animeFactsGame
- CIS 123 data mining project
+Data mining project to help learn concepts.
